@@ -1,0 +1,253 @@
+/*body css*/
+body {
+  font-family: 'Raleway', sans-serif, serif;
+  margin: 0;
+  }
+
+/*nav css*/
+nav {
+height: 120px;
+background-color: #96BFD9;
+display: flex;
+}
+.navwrapper {
+  width: 66%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  }
+
+nav li {
+  display: inline-block;
+  list-style: none;
+}
+
+.greybox {
+  background-color: black;
+  opacity: 0.7;
+  z-index: 2;
+  height: 300px;
+  width: 50%;
+  display: flex;
+  position: absolute;
+  top: 300px;
+}
+
+nav ul {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16pt;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+  align-items: center;
+}
+nav a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+
+}
+
+.booknav {
+  background-color: #D93B3B;
+}
+
+nav div img {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: flex-start;
+}
+nav img {
+  float: left;
+  }
+
+/*header css*/
+header {
+height: 700px;
+text-align: center;
+display: flex;
+justify-content: center;
+background-image: url(../assets/figma3.jpg);
+background-repeat: no-repeat;
+background-color: lightgrey;
+background-size: cover;
+z-index: 1;
+}
+
+.headerwrapper {
+  width: 66%;
+  height: 100%;
+  margin: 0 auto;
+  z-index: 3;
+}
+
+.headercontent {
+  width: 66%;
+  height: 50%;
+  margin: 25% auto;
+  z-index: 3;
+  color: white;
+}
+
+header h1 {
+  font-size: 96;
+  font-family: Montserrat;
+}
+header h2 {
+  font-size: 36;
+}
+header button {
+  width: 162px;
+  height: 56px;
+  border: none;
+  color: white;
+  background-color: #D93B3B;
+}
+header button:hover {
+  background-color: #96BFD9;
+  text-shadow: 16px;
+  transition: 0.5s;
+}
+header h2 {
+  font-weight: lighter;
+  font-size: 16pt;
+}
+
+/*section css*/
+section {
+height: 480px;
+text-align: center;
+}
+
+.sectionwrapper1{
+  width: 66%;
+  height: 300px;
+  margin: 0 auto;
+}
+.sectionwrapper2{
+  width: 66%;
+  height: 400px;
+  display: flex;
+  margin: 0 auto;
+
+}
+/*sectionform*/
+.sectionform {
+  width: 66%;
+  height: 100%;
+  margin: 0 auto;
+}
+section form {
+  border: 1px solid #96BFD9;
+  padding: 16px;
+  height: 80%;
+  display: block;
+  font-size: 16pt;
+}
+input, textarea {
+border: 1px solid #B5BF8F;
+border-radius: 5px;
+padding: 18px 16px;
+margin: 16px 32px;
+}
+textarea {
+  width: 40%;
+  height: 10%;
+  text-align: left;
+}
+.sectionform button {
+  background-color: #D93B3B;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 auto;
+  border: none;
+  padding: 16px 32px;
+  color: white;
+}
+.field {
+  display: block;
+}
+
+
+/*footer css*/
+footer {
+height: 240px;
+
+background-color: #B5BF8F;
+}
+
+.footerwrapper {
+  width: 66%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.hamburger, .close {
+  display: none;
+}
+.lodge {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0 auto;
+}
+}
+.lodge li {
+  height: 50%;
+  width: 20%;
+  padding: 16px;
+  border: 1px solid black;
+
+}
+
+.c2 {
+  display: flex;
+  flex-direction: row;
+}
+.lodge {
+  decoration: none;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.c3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 0 auto;
+}
+
+@media(max-width: 1079px) {
+.hamburger, .close {
+  display: block;
+  float: right;
+  font-size: 48pt;
+  }
+  nav ul {
+    position: fixed;
+    top: -100vh
+  }
+
+  nav ul.open-nav {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #B5BF8F;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul.open-nav a {
+    color: white;
+    text-decoration: none;
+  }
+}
